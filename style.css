@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:2em;
+}
+header{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.nav-bar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    
+}
+.logo
+{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    margin-right: 3em;
+}
+.first
+{
+    color: #A18A68;
+}
+.second
+{
+    color: #686AA1;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    color: #060606;
+    text-decoration: none;
+
+}
+.pic_header{
+    height: 90vh;
+    background-image: url("Header.png");
+    background-size: cover;
+    border-radius: 15px;
+    padding-left: 9em;
+    background-repeat: no-repeat;
+       
+}
+.header_h1
+{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 50px;
+	color: white;
+	font-size: 90px;
+	text-align:start;
+    margin-top: 29;
+}
+.header_h2
+{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 50px;
+	color: white;
+	font-size: 30px;
+	text-align:start;
+    bottom: 300px;
+    left: 15px;
+}
+.header_h3
+{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+	color: white;
+	font-size: 30px;
+	text-align:start;
+    bottom: 230px;
+    left: 15px;
+}
+
+
+.header_h4
+{
+    font-size: 26px;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    /* margin-left: 2em; */
+}
+.Header_h5
+{
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+}
+h3 button{
+    padding: 12px;
+    border-radius: 14px;
+    background-color: #A18A68;
+    color: aliceblue;
+    outline: none;
+    border: none;
+}
+h3 button:hover{
+    padding: 14px;
+}
+
+
+.product
+{
+    padding: 40px 0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    gap: 100px;
+    
+}
+.price {
+    color: #A18A68;
+    font-size:large;
+}
+
+.about
+{
+    text-align: center;
+}
+.custom-footer{
+    
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+ a:hover {
+    color: #f5deae;
+}
+.custom-form
+{
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+     
+}
+.form{
+    width: auto;
+    border: 0;
+    border-bottom: 2px solid;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    transition: border-color 0.2s;
+}
+/* for description */
+.custom-aside
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+    
+.button {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #e9bf9e;
+    border: none;
+    color: rgb(138, 95, 159);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;}
+#custom-des
+{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    color: #686AA1;
+    font-weight:bolder;
+    font-size:30px;
+}
+aside {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+#Header-rec
+{
+    margin-left: 50px;
+    color: #686AA1;
+}
+.Recommendation {
+    padding: 40px 0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+}
+h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #6f4c7f;
+}
+.fa-solid
+{
+    color: yellow;
+}
+.description {
+    text-align: center;
+    width: 43%;
+}
+
+.clientImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.clientImage span {
+    margin-left: 10px;
+}
+
+.clientImage img {
+    width: 40px;
+}
+
+.reviewSection {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviewItem {
+    width: 300px;
+    padding: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #cfc9c3;
+    border: 1px solid #ddc8a2;
+    transition: all .2s linear;
+}
+
+.reviewItem:hover {
+    border-color: rgb(235, 186, 243);
+    transform: scale(1.01);
+    background-color: #946d1e;
+    box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
+.top {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top ul {
+    display: flex;
+    list-style: none;
+}
+
+.top ul li {
+    padding-left: 4px;
+}
+
+article p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* for panier */
+#btn-quantity {
+    background-color: #A18A68;
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+}
+#label
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+input {
+    border: px solid #222;
+    background: #fff;
+}
+.shipping
+{
+    color:#6f4c7f;
+}
