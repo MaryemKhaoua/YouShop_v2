@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 body{
     margin:2em;
@@ -116,9 +117,18 @@ aside{
     font-size:large;
 }
 /* styling the About */
+.custom_h
+{
+    font-size: 40px;
+}
 .Custom-about
 {
     text-align: center;
+}
+.Custom-list
+{
+    font-size: 20px;
+    list-style: inside;
 }
 /* styling footer */
 .custom-footer{
@@ -158,6 +168,17 @@ a:hover
     font-size: 1.3rem;
     padding: 7px 0;
 }
+.icon-smedia
+{
+    display: flex;
+    justify-content: end;
+
+}
+/* .icon
+{
+    display: flex;
+    justify-content: space-between;
+} */
 @media (max-width: 768px)
 {
     .hero
@@ -166,20 +187,19 @@ a:hover
     }
     .nav-bar
     {
+        display: flex;
         flex-direction: column;
     }
 
     nav ul li
     {
-        display: block;
-        padding: 10px;
+        display: none;
     }
 
     .logo
     {
         font-size: 40px;
     }
-
     .hero
     {
         height: 70vh;
@@ -187,6 +207,19 @@ a:hover
     }
     .product
     {
+        display: flex;
         flex-direction: column;
     }
+    .footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .custom-footer
+    {
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+    }
+
 }
