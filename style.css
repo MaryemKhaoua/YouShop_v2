@@ -10,8 +10,8 @@ header{
     margin-right: 5%;
 }
 .nav-bar{
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     align-self: center;
     
@@ -163,7 +163,7 @@ h3 button:hover{
     border-bottom: 2px solid;
     font-size: 1.3rem;
     padding: 7px 0;
-    transition: border-color 0.2s;
+    
 }
 /* for description */
 .custom-aside
@@ -257,13 +257,11 @@ h4 {
     border-radius: 10px;
     background-color: #cfc9c3;
     border: 1px solid #ddc8a2;
-    transition: all .2s linear;
 }
 
 .reviewItem:hover {
     border-color: rgb(235, 186, 243);
-    transform: scale(1.01);
-    background-color: #946d1e;
+    background-color: #c4b089;
     box-shadow: 0 0px 5px 0px #cbc0c0;
 }
 
