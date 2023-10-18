@@ -166,6 +166,10 @@ h3 button:hover{
     
 }
 /* for description */
+.logo_mobile
+{
+    display: none;
+}
 .custom-aside
 {
     display: flex;
@@ -173,7 +177,8 @@ h3 button:hover{
 }
 
     
-.button {
+.button
+{
     font-family: 'Allerta Stencil', sans-serif;
     font-family: 'DM Sans', sans-serif;
     background-color: #e9bf9e;
@@ -185,7 +190,8 @@ h3 button:hover{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;}
+    cursor: pointer;
+}
 #custom-des
 {
     font-family: 'Allerta Stencil', sans-serif;
