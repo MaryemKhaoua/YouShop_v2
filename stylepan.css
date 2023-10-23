@@ -42,7 +42,7 @@ a:hover {
     text-decoration: none;
 }
 
-.first {
+.first, #price {
     color: #A18A68;
 }
 
@@ -78,6 +78,18 @@ a:hover {
     text-decoration: none;
     border-radius: 5%;
 }
+#price{
+    font-size: 20px;
+
+}
+#ttl-price
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+#custom-desc{
+    font-size: 20px;
+}
 #label
 {
     display: flex;
@@ -88,9 +100,10 @@ input {
     border: px solid #222;
     background: #fff;
 }
-.shipping
+.title-shipping, .title-information
 {
-    color:#6f4c7f;
+    color:#686AA1;
+    font-size: 30px;
 }
 section {
     width: 80%;
@@ -125,7 +138,7 @@ section {
   
   /* Style the submit button */
   input[type="submit"] {
-    background-color: #473547;
+    background-color: #e9d19c;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -137,6 +150,7 @@ section {
   #asterisk
   {
     color: red;
+
 
   }
   input[name="adress"] {
@@ -162,7 +176,7 @@ section {
   }
   
   input[type="submit"]:hover {
-    background-color: #ca85e1;
+    background-color: #b399da;
   }
   /* styling footer */
 .custom-footer {

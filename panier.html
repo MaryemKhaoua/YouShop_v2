@@ -51,19 +51,21 @@
                 <li><p>4/5</p></li>
             </ul>
         </div>
-        <p>29.00$</p>
+        <span id ="price">29.00$</span>
         <!-- <input type=""> -->
-        <p>Lorem Ipsum is simply dummy text oftheprin and typesetting indust Lorem Ipsum is simply dummy text otheprin and typesetting indust</p>
+        <p id="custom-desc">Lorem Ipsum is simply dummy text oftheprin and typesetting indust <br>Lorem Ipsum is simply dummy text otheprin and typesetting indust</p>
+        <br>
         <ul>
             <button id="btn-quantity-moins">-</button>
             <button id="btn-quantity">1</button>
             <button id="btn-quantity-plus">+</button>
         </ul>
+        <span id="ttl-price">Total Price: </span>
     </aside>
 </section>
 <section>
-    <h2 class="shipping">Shipping details</h2>
-    <form action="#" class="form-panier">
+    <h2 class="title-shipping">Shipping details</h2>
+    <form name ="myForm" action="#" class="form-panier">
         <div>
           <label id="label" for="name" >Full Name</label><span id="asterisk">*</span> 
           <input type="text" name="name" id="name" placeholder="Enter your name" required/>
@@ -87,7 +89,7 @@
           </div>
       </form>
       <br>
-      <h3 class="shipping">Payments Information </h3>
+      <h3 class="title-information">Payments Information </h3>
       <form action="#" class="form-panier">
         <div>
           <label id="label">Credit Card NO</label><span id="asterisk">*</span>
