@@ -49,6 +49,7 @@ a:hover {
 .second {
     color: #686AA1;
 }
+
 .fa-solid
 {
     color: yellow;
@@ -78,15 +79,19 @@ a:hover {
     text-decoration: none;
     border-radius: 5%;
 }
+.parent-btn{
+    display: flex;
+}
 #price{
     font-size: 20px;
-
-}
-#ttl-price
-{
     font-weight: bold;
-    font-size: 20px;
+    border: 2px solid rgb(193, 127, 45);
+    padding: 17px;
+    border-radius: 10px;
+    color: rgb(250, 170, 77);
+    
 }
+
 #custom-desc{
     font-size: 20px;
 }
