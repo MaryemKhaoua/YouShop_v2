@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panier</title>
-    <link rel="stylesheet" href="stylepan.css">
+    <link rel="stylesheet" href="stylepannirev2.css">
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,100&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,16 +36,26 @@
                     <li><a  href=""><i class="fas fa-shopping-cart" style="color: #000000;"></i></a></li>
                     <li><a  href=""><i class="fas fa-user" style="color: #000000;"></i></a></li>
                 </ul>
+                <button class="hamburger-menu">
+                    <i class="menuIcon material-icons">menu</i>
+                  </button>
             </nav> 
         </div>
 </header>
 <section class="custom-aside">
     <figure>
-        <img src="1.png" alt="product1">
+        <a href=""><img src="1.png" alt="Product 1"></a>  
+          <figcaption>Lira Earring</figcaption>
+          <span id="item-price" >29.00$</span>
+      </figure>
+      <figure>
+        <img src="2.png" alt="Product 2">
+        <figcaption>Hal Earring</figcaption>
+        <span id="item-price" >25.00$</span>
     </figure>
     <aside>
         <h1>Yuki Hair Pin Set Of 3</h1>
-        <div  class="top">
+        <!-- <div  class="top">
             <ul>
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
@@ -50,24 +64,27 @@
                 <li><i class="fa-regular fa-star"></i></li>
                 <li><p>4/5</p></li>
             </ul>
-        </div>
-        <span id ="price">29.00$</span>
-        <!-- <input type=""> -->
+        </div> -->
+        
         <p id="custom-desc">Lorem Ipsum is simply dummy text oftheprin and typesetting indust <br>Lorem Ipsum is simply dummy text otheprin and typesetting indust</p>
         <br>
-        <ul>
-            <button id="btn-quantity-moins">-</button>
-            <button id="btn-quantity">1</button>
-            <button id="btn-quantity-plus">+</button>
-        </ul>
-        <span id="ttl-price">Total Price: </span>
+        <section class="parent-btn">
+            <ul>
+                <button id="btn-quantity-moins">-</button>
+                <button id="btn-quantity">1</button>
+                <button id="btn-quantity-plus">+</button>
+            </ul>
+            <span id ="price">29.00$</span>
+            <button id="remove-items">Remove</button>
+        </section>
+
     </aside>
 </section>
 <section>
     <h2 class="title-shipping">Shipping details</h2>
     <form name ="myForm" action="#" class="form-panier">
         <div>
-          <label id="label" for="name" >Full Name</label><span id="asterisk">*</span> 
+           <label id="label" for="name" >Full Name</label><span id="asterisk">*</span>
           <input type="text" name="name" id="name" placeholder="Enter your name" required/>
         </div>
         <div>
