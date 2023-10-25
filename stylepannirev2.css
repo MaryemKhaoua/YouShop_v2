@@ -256,12 +256,19 @@ footer {
 .icon-smedia img {
     margin-right: 1em;
 }
-@media (max-width: 768px){
-    body {
+@media (max-width: 768px)
+{
+    body
+    {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+    .custom-hero
+    {
+        display: flex;
+        justify-content: space-between;
     }
     .hamburger-menu
     {
@@ -275,7 +282,8 @@ footer {
     {
         display: flex;
         justify-content: center;
-        width: 5em;
+        width: 2em;
+
     }
 
     .nav-bar {
