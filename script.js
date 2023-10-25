@@ -27,3 +27,34 @@ btn_moins.addEventListener("click", function () {
         totalPrice();
     }
 });
+
+const removeButtons = document.querySelectorAll('#remove-items');
+const productSection = document.querySelectorAll('.custom-aside');
+
+
+//burger menu
+
+
+
+// const hamburgerButton = document.querySelector(".hamburger-menu");
+// const menu = document.querySelector(".menu");
+// hamburgerButton.addEventListener("click", function () {
+//     menu.classList.toggle("active");
+// });
+function namee() 
+{
+    let B = document.getElementById('namee');
+    let nom = document.getElementById('name');
+    if (nom.value.length <= 2) 
+    {
+      B.innerText = "INVALID"
+      B.style.color="red"
+      return false;
+  
+    }
+    else {
+      B.innerText="VALID"
+      B.style.color="green"
+      return true;
+    }
+}
