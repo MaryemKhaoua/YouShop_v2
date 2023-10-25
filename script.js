@@ -50,5 +50,3 @@ function closeMenu()
 }
 hamburgerBtn.addEventListener("click", burgerMenu);
 menu.addEventListener("click", closeMenu);
-
-   
