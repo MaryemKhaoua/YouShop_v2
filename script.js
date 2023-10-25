@@ -28,33 +28,18 @@ btn_moins.addEventListener("click", function () {
     }
 });
 
-const removeButtons = document.querySelectorAll('#remove-items');
-const productSection = document.querySelectorAll('.custom-aside');
+const productSection = document.querySelector("#product-1");
 
-
-//burger menu
-
-
-
-// const hamburgerButton = document.querySelector(".hamburger-menu");
-// const menu = document.querySelector(".menu");
-// hamburgerButton.addEventListener("click", function () {
-//     menu.classList.toggle("active");
-// });
-function namee() 
-{
-    let B = document.getElementById('namee');
-    let nom = document.getElementById('name');
-    if (nom.value.length <= 2) 
+    removeBtn.addEventListener('click', function ()
     {
-      B.innerText = "INVALID"
-      B.style.color="red"
-      return false;
-  
-    }
-    else {
-      B.innerText="VALID"
-      B.style.color="green"
-      return true;
-    }
-}
+        removeBtn.parentElement.parentElement.parentElement.remove();
+        product.remove();
+    });
+    
+//burger menu
+const hamburgerButton = document.querySelector(".hamburger-menu");
+const menu = document.querySelector(".menu");
+
+hamburgerButton.addEventListener("click", function () {
+    menu.classList.toggle("active");
+});
