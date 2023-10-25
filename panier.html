@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,100&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -37,10 +38,15 @@
                     <li><a  href=""><i class="fas fa-user" style="color: #000000;"></i></a></li>
                 </ul>
                 <button class="hamburger-menu">
-                    <i class="menuIcon material-icons">menu</i>
-                  </button>
+                    <i class="material-icons">menu</i>
+                </button>
             </nav> 
         </div>
+    </section>
+    <!-- logo For mobile-->
+    <section class="logo_mobile">
+        <img src="YouShopeLogo.png">
+    </section>
 </header>
 <section class="custom-aside">
     <figure>
@@ -48,13 +54,8 @@
           <figcaption>Lira Earring</figcaption>
           <span id="item-price" >29.00$</span>
       </figure>
-      <figure>
-        <img src="2.png" alt="Product 2">
-        <figcaption>Hal Earring</figcaption>
-        <span id="item-price" >25.00$</span>
-    </figure>
-    <aside>
-        <h1>Yuki Hair Pin Set Of 3</h1>
+    <aside id="product-1">
+        <h1>Lira Earring</h1>
         <!-- <div  class="top">
             <ul>
                 <li><i class="fa-solid fa-star"></i></li>
@@ -76,6 +77,7 @@
             </ul>
             <span id ="price">29.00$</span>
             <button id="remove-items">Remove</button>
+
         </section>
 
     </aside>
@@ -84,11 +86,11 @@
     <h2 class="title-shipping">Shipping details</h2>
     <form name ="myForm" action="#" class="form-panier">
         <div>
-           <label id="label" for="name" >Full Name</label><span id="asterisk">*</span>
-          <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+           <label id="label" for="name" >Full Name</label>
+          <input type="text" name="name" id="namee" placeholder="Enter your name" required/>
         </div>
         <div>
-          <label id="label" for="number">Phone Number</label><span id="asterisk">*</span>
+          <label id="label" for="number">Phone Number</label>
           <input type="tel" name="number Phone" id="number"  placeholder="+212600000000" required/>
         </div>
         <div>
@@ -96,7 +98,7 @@
             <input type="email" name="email" id="email"  placeholder="example@examlpe.com" required/>
           </div>
           <div>
-            <label id="label" for="adress">Delivery Address<span id="asterisk">*</span></label>
+            <label id="label" for="adress">Delivery Address<span id="asterisk">
             <input type="text" name="adress" id="adress"  placeholder="Street Adress" required/>
             <input type="text" name="adress" id="adress"  placeholder="Street Adress Line 2" required/>
             <input type="text" name="adress" id="adress"  placeholder="Postal/ ZIP Code" required/>
@@ -109,15 +111,15 @@
       <h3 class="title-information">Payments Information </h3>
       <form action="#" class="form-panier">
         <div>
-          <label id="label">Credit Card NO</label><span id="asterisk">*</span>
+          <label id="label">Credit Card NO</label>
           <input type="text" name="No card" id="card" placeholder="XXX-XXX-XXXXXXXXXX" required/>
         </div>
         <div>
-          <label id="label">EXP</label><span id="asterisk">*</span> 
+          <label id="label">EXP</label>
           <input type="text" name="card" id="card"  placeholder="" required/>
         </div>
         <div>
-            <label id="label">CCV</label><span id="asterisk">*</span>
+            <label id="label">CCV</label>
             <input type="text" name="card" id="card"  placeholder="" required/>
           </div>
           <div>

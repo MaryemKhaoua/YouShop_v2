@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2em;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo_mobile
+{
+    display: none;
+}
+
+.nav-bar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    color: #060606;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f5deae;
+}
+
+.logo {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 36px;
+    text-decoration: none;
+    color: #000;
+}
+
+.first, #price, #item-price
+{
+    color: #A18A68;
+}
+
+.second
+{
+    color: #686AA1;
+}
+.hamburger-menu
+{
+    background-color: #A18A68;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    margin: 0 10px;
+    cursor: pointer;
+    display: none;
+}
+/* .menu {
+    display: none;
+}
+
+.hamburger-menu.active {
+    display: block;
+} */
+/* .fa-solid
+{
+    color: yellow;
+    
+} */
+.top {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top ul
+{
+    list-style: none;
+}
+
+.top ul li {
+    padding-left: 4px;
+}
+
+#btn-quantity, #btn-quantity-moins, #btn-quantity-plus {
+    background-color: #A18A68;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.parent-btn{
+    display: flex;
+    justify-content: space-between;
+}
+#price, #remove-items
+{
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(193, 127, 45);
+    padding: 17px;
+    border-radius: 10px;
+    color: rgb(250, 170, 77);
+    margin-top: 23px;
+    cursor: pointer;
+    background:white;
+}
+
+#custom-desc {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#label {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+#asterisk
+{
+    color: red;
+}
+input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.title-shipping, .title-information {
+    color: #686AA1;
+    font-size: 24px;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2.shipping, h3.shipping {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #e9d19c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+input[name="adress"] {
+    margin-bottom: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #b399da;
+}
+
+/* styling footer */
+.custom-footer {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f5deae;
+}
+
+.custom-form {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+.form {
+    width: auto;
+    border: 0;
+    border-bottom: 2px solid;
+    font-size: 1.3rem;
+    padding: 7px 0;
+}
+
+.icon-smedia {
+    display: flex;
+    justify-content: end;
+}
+
+/* Add space to the page */
+section.custom-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+section.custom-aside figure {
+    flex: 1;
+    margin-right: 1em;
+}
+
+section.custom-aside aside {
+    flex: 2;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+.icon-smedia {
+    margin-top: 2em;
+}
+
+.icon-smedia img {
+    margin-right: 1em;
+}
+@media (max-width: 768px){
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hamburger-menu
+    {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+
+    .logo_mobile
+    {
+        display: flex;
+        justify-content: center;
+        width: 5em;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: none;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .custom-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
