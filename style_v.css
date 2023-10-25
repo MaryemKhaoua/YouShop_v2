@@ -12,6 +12,12 @@ header{
     margin-right: 5%;
 }
 /* styling logo and nav-bar */
+.menu-formobile
+{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
 .for_mobile{
     display: none;
 }
@@ -52,6 +58,19 @@ a:hover
 .second
 {
     color: #686AA1;
+}
+.hamburger-menu
+{
+    background-color: #A18A68;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    margin: 0 10px;
+    cursor: pointer;
+    display: none;
 }
 /* styling Hero of the page */
 .hero
@@ -191,6 +210,16 @@ a:hover
         flex-direction: column;
         align-items: center;
     }
+    .hamburger-menu
+    {
+        display: block;
+    }
+    .menu-formobile
+{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
     .logo_mobile
     {
         display: flex;

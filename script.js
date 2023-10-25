@@ -33,13 +33,22 @@ const productSection = document.querySelector("#product-1");
     removeBtn.addEventListener('click', function ()
     {
         removeBtn.parentElement.parentElement.parentElement.remove();
-        product.remove();
     });
-    
-//burger menu
-const hamburgerButton = document.querySelector(".hamburger-menu");
+
+// burger menu
+
+const hamburgerBtn = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".menu");
 
-hamburgerButton.addEventListener("click", function () {
-    menu.classList.toggle("active");
-});
+function burgerMenu()
+{
+    menu.style.display = "flex";
+}
+function closeMenu()
+{
+    menu.style.display = "none";
+}
+hamburgerBtn.addEventListener("click", burgerMenu);
+menu.addEventListener("click", closeMenu);
+
+   
