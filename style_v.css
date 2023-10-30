@@ -12,6 +12,9 @@ header{
     margin-right: 5%;
 }
 /* styling logo and nav-bar */
+
+
+
 .menu-formobile
 {
     display: none;
@@ -207,6 +210,9 @@ a:hover
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+    .burger-menu {
+        display: flex;
     }
     .hamburger-menu
     {

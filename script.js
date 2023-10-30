@@ -3,8 +3,21 @@ const btn_plus = document.getElementById("btn-quantity-plus");
 const quantity = document.getElementById("btn-quantity");
 const currentPrice = document.getElementById("price");
 const removeBtn = document.getElementById("remove-items");
+//validation form
+const fullNamee = document.getElementsByClassName('fullName');
+function validate(){
+    if (fullNamee.value == "")
+    {
+        alert('enter ur name')
+        return false;
+    }
+    else
+    {
+        return
+        true;
+    }
 
-
+}
 let productQnt = 1;
 let price = 29.00;
 

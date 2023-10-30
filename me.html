@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>YouMeubles - Service Client</title>
+<style>
+body {font-family: Arial, sans-serif;}
+</style>
+</head>
+<body>
+
+<h2>Vous avez besoin d'aide?</h2>
+<p>Notre service client est là pour vous aider.</p>
+
+<form action="/action_page.php">
+ <label for="fname">Prénom</label><br>
+ <input type="text" id="fname" name="fname" placeholder="Votre prénom.."><br>
+ <label for="lname">Nom</label><br>
+ <input type="text" id="lname" name="lname" placeholder="Votre nom.."><br><br>
+ <label for="email">Email</label><br>
+ <input type="text" id="email" name="email" placeholder="Votre email.."><br><br>
+ <label for="country">Sujet</label><br>
+ <select id="country" name="country">
+    <option value="australia">Renseignements sur les produits</option>
+    <option value="canada">Question concernant les produits</option>
+    <option value="usa">Autres</option>
+ </select><br><br>
+ <label for="message">Message</label><br>
+ <textarea id="message" name="message" placeholder="Votre message.." style="height:200px"></textarea><br>
+ <input type="submit" value="Envoyer">
+</form>
+
+</body>
+</html>
